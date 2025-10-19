@@ -14,8 +14,8 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: #2c3e50;
-            background: #f8f9fa;
+            color: #1a202c;
+            background: #f7fafc;
         }
 
         /* Navigation */
@@ -38,7 +38,7 @@
         }
 
         nav a {
-            color: #2c3e50;
+            color: #1a202c;
             text-decoration: none;
             font-weight: 600;
             transition: color 0.3s;
@@ -52,12 +52,12 @@
             left: 0;
             width: 0;
             height: 2px;
-            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(90deg, #0891b2 0%, #06b6d4 100%);
             transition: width 0.3s;
         }
 
         nav a:hover {
-            color: #667eea;
+            color: #0891b2;
         }
 
         nav a:hover::after {
@@ -70,7 +70,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0e7490 0%, #0891b2 50%, #06b6d4 100%);
             position: relative;
             overflow: hidden;
         }
@@ -98,31 +98,49 @@
             padding: 2rem;
         }
 
+        /* Profile Image Container */
+        .profile-image-container {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 2rem;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            animation: fadeInUp 1s ease;
+        }
+
+        .profile-image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
         .hero h1 {
             font-size: 4rem;
             margin-bottom: 0.5rem;
-            animation: fadeInUp 1s ease;
+            animation: fadeInUp 1s ease 0.1s backwards;
         }
 
         .hero .subtitle {
             font-size: 1.3rem;
             margin-bottom: 0.5rem;
             opacity: 0.95;
-            animation: fadeInUp 1s ease 0.1s backwards;
+            animation: fadeInUp 1s ease 0.2s backwards;
         }
 
         .hero p {
             font-size: 1.2rem;
             margin-bottom: 2rem;
             opacity: 0.9;
-            animation: fadeInUp 1s ease 0.2s backwards;
+            animation: fadeInUp 1s ease 0.3s backwards;
         }
 
         .cta-button {
             display: inline-block;
             padding: 1rem 2.5rem;
             background: white;
-            color: #667eea;
+            color: #0891b2;
             text-decoration: none;
             border-radius: 50px;
             font-weight: 600;
@@ -160,14 +178,14 @@
         }
 
         section:nth-child(even) {
-            background: #f8f9fa;
+            background: #f7fafc;
         }
 
         h2 {
             font-size: 2.5rem;
             margin-bottom: 3rem;
             text-align: center;
-            color: #2c3e50;
+            color: #1a202c;
             position: relative;
         }
 
@@ -176,7 +194,7 @@
             display: block;
             width: 80px;
             height: 4px;
-            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(90deg, #0891b2 0%, #06b6d4 100%);
             margin: 1rem auto;
             border-radius: 2px;
         }
@@ -185,7 +203,7 @@
         .about-content {
             max-width: 900px;
             margin: 0 auto;
-            color: #555;
+            color: #4a5568;
             font-size: 1.1rem;
             line-height: 1.8;
         }
@@ -207,6 +225,7 @@
             border-radius: 15px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
+            border-left: 4px solid #0891b2;
         }
 
         .highlight-card:hover {
@@ -214,7 +233,7 @@
         }
 
         .highlight-card h3 {
-            color: #667eea;
+            color: #0891b2;
             margin-bottom: 0.5rem;
             font-size: 1.3rem;
         }
@@ -232,18 +251,18 @@
             border-radius: 15px;
             overflow: hidden;
             transition: transform 0.3s, box-shadow 0.3s;
-            border: 1px solid #e0e0e0;
+            border: 1px solid #e2e8f0;
         }
 
         .research-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(102, 126, 234, 0.2);
+            box-shadow: 0 20px 40px rgba(8, 145, 178, 0.2);
         }
 
         .research-image {
             width: 100%;
             height: 200px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0891b2 0%, #06b6d4 100%);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -256,24 +275,24 @@
         }
 
         .research-content h3 {
-            color: #2c3e50;
+            color: #1a202c;
             margin-bottom: 0.5rem;
         }
 
         .research-content p {
-            color: #666;
+            color: #4a5568;
             margin-bottom: 1rem;
         }
 
         .research-link {
-            color: #667eea;
+            color: #0891b2;
             text-decoration: none;
             font-weight: 600;
             transition: color 0.3s;
         }
 
         .research-link:hover {
-            color: #764ba2;
+            color: #06b6d4;
         }
 
         /* Skills Section */
@@ -287,18 +306,18 @@
         }
 
         .skill-tag {
-            background: rgba(102, 126, 234, 0.1);
-            color: #667eea;
+            background: rgba(8, 145, 178, 0.1);
+            color: #0891b2;
             padding: 0.7rem 1.5rem;
             border-radius: 25px;
-            border: 2px solid rgba(102, 126, 234, 0.3);
+            border: 2px solid rgba(8, 145, 178, 0.3);
             transition: transform 0.3s, background 0.3s;
             font-weight: 500;
         }
 
         .skill-tag:hover {
             transform: scale(1.1);
-            background: rgba(102, 126, 234, 0.2);
+            background: rgba(8, 145, 178, 0.2);
         }
 
         /* Publications Section */
@@ -315,7 +334,7 @@
         }
 
         .stat-card {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0891b2 0%, #06b6d4 100%);
             color: white;
             padding: 2rem;
             border-radius: 15px;
@@ -341,7 +360,7 @@
         }
 
         .contact-content p {
-            color: #666;
+            color: #4a5568;
             font-size: 1.1rem;
             margin-bottom: 2rem;
         }
@@ -352,7 +371,7 @@
 
         .contact-info p {
             margin: 0.5rem 0;
-            color: #2c3e50;
+            color: #1a202c;
         }
 
         .contact-links {
@@ -363,7 +382,7 @@
         }
 
         .contact-links a {
-            color: #667eea;
+            color: #0891b2;
             text-decoration: none;
             font-size: 1.1rem;
             font-weight: 600;
@@ -371,7 +390,7 @@
         }
 
         .contact-links a:hover {
-            color: #764ba2;
+            color: #06b6d4;
         }
 
         /* Video Grid Styles */
@@ -396,7 +415,7 @@
 
         .video-container {
             position: relative;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            padding-bottom: 56.25%;
             height: 0;
             overflow: hidden;
         }
@@ -409,10 +428,22 @@
             height: 100%;
         }
 
+        /* Coming Soon Badge */
+        .coming-soon {
+            display: inline-block;
+            background: #fbbf24;
+            color: #78350f;
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-left: 0.5rem;
+        }
+
         /* Footer */
         footer {
-            background: #2c3e50;
-            color: #ecf0f1;
+            background: #1a202c;
+            color: #cbd5e0;
             text-align: center;
             padding: 2rem;
         }
@@ -433,6 +464,7 @@
 
             nav ul {
                 gap: 1.5rem;
+                font-size: 0.9rem;
             }
 
             section {
@@ -441,6 +473,11 @@
 
             .stat-card .number {
                 font-size: 2rem;
+            }
+
+            .profile-image-container {
+                width: 150px;
+                height: 150px;
             }
         }
     </style>
@@ -461,6 +498,10 @@
 
     <section id="home" class="hero">
         <div class="hero-content">
+            <div class="profile-image-container">
+                <img src="https://media.licdn.com/dms/image/v2/D5603AQGjLFDQsLX8mw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1729037719972?e=1740614400&v=beta&t=VvzBwVoqg-nrb1pjQdVDz5p3Xh_KjHlNFEd7pRZ8ZLE" alt="Zohaib Rana, PhD">
+            </div>
+            
             <h1>Zohaib Rana, PhD</h1>
             <p class="subtitle">Postdoctoral Fellow | RNA & Cancer Therapeutics</p>
             <p>Genomics • Bioinformatics • Vaccine Design</p>
@@ -487,16 +528,16 @@
 
         <div class="about-highlights">
             <div class="highlight-card">
-                <h3>🏆 Awards</h3>
-                <p>KiwiNet Emerging Innovator Award (2024), TIA Pipeline Accelerator Grant PI (2025)</p>
+                <h3>🏆 Awards & Recognition</h3>
+                <p>KiwiNet Emerging Innovator Award (2024), TIA Pipeline Accelerator Grant PI (2025, AUD $50,000)</p>
             </div>
             <div class="highlight-card">
                 <h3>🔬 Research Focus</h3>
-                <p>RNA therapeutics, cancer biology, multi-omics analysis, vaccine design</p>
+                <p>RNA therapeutics, glioblastoma, multi-omics analysis, vaccine design, cancer biomarkers</p>
             </div>
             <div class="highlight-card">
-                <h3>💡 Innovation</h3>
-                <p>Co-inventor on lncRNA cancer target discovery platform, founding scientist at Amaroq Therapeutics</p>
+                <h3>💡 Innovation & Impact</h3>
+                <p>Co-inventor on lncRNA cancer target discovery platform, founding scientist at Amaroq Therapeutics, consultant at RNAFold.AI</p>
             </div>
         </div>
     </section>
@@ -508,7 +549,7 @@
                 <div class="research-image">🧬</div>
                 <div class="research-content">
                     <h3>RNA Therapeutics for Glioblastoma</h3>
-                    <p>Leading MBIE-funded projects developing focused ultrasound-guided RNA therapeutic strategies for brain cancers and Parkinson's disease.</p>
+                    <p>Leading MBIE-funded projects developing focused ultrasound-guided RNA therapeutic strategies for brain cancers and Parkinson's disease with multidisciplinary teams.</p>
                     <a href="#contact" class="research-link">Learn More →</a>
                 </div>
             </div>
@@ -516,7 +557,7 @@
                 <div class="research-image">💉</div>
                 <div class="research-content">
                     <h3>Computational Vaccine Design</h3>
-                    <p>Building multi-omics pipelines for biomarker discovery and mRNA-based vaccine development for pandemic preparedness.</p>
+                    <p>Building multi-omics pipelines for biomarker discovery and mRNA-based vaccine development for pandemic preparedness through NZ RNA Platform Grant.</p>
                     <a href="#contact" class="research-link">Learn More →</a>
                 </div>
             </div>
@@ -524,7 +565,7 @@
                 <div class="research-image">🎯</div>
                 <div class="research-content">
                     <h3>Cancer Biomarker Discovery</h3>
-                    <p>Integrating genomics, bioinformatics, and machine learning to identify novel RNA targets for cancer therapeutics.</p>
+                    <p>Integrating genomics, bioinformatics, and machine learning to identify novel RNA targets for cancer therapeutics. Co-inventor on lncRNA target discovery platform.</p>
                     <a href="#contact" class="research-link">Learn More →</a>
                 </div>
             </div>
@@ -536,16 +577,19 @@
         <div class="skills-container">
             <span class="skill-tag">RNA Therapeutics</span>
             <span class="skill-tag">Cancer Biology</span>
+            <span class="skill-tag">Glioblastoma Research</span>
             <span class="skill-tag">Genomics</span>
             <span class="skill-tag">Bioinformatics</span>
             <span class="skill-tag">Multi-omics Analysis</span>
             <span class="skill-tag">Machine Learning</span>
-            <span class="skill-tag">Vaccine Design</span>
+            <span class="skill-tag">Vaccine Design (mRNA)</span>
             <span class="skill-tag">R & Python</span>
             <span class="skill-tag">Drug Discovery</span>
+            <span class="skill-tag">HDAC Inhibitors</span>
             <span class="skill-tag">Molecular Biology</span>
             <span class="skill-tag">Data Analysis</span>
             <span class="skill-tag">Grant Writing</span>
+            <span class="skill-tag">Project Management</span>
         </div>
     </section>
 
@@ -563,18 +607,25 @@
                 </div>
                 <div class="stat-card">
                     <div class="number">$50K</div>
-                    <div class="label">TIA Grant as PI</div>
+                    <div class="label">TIA Grant (AUD) as PI</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">15.3</div>
+                    <div class="label">Highest Impact Factor (Angew Chem)</div>
                 </div>
             </div>
             <div class="about-content">
                 <p>
-                    My research has been published in prestigious journals including <em>Angewandte Chemie International Edition</em> (IF: 15.3), <em>Biomedicines</em>, <em>Pharmaceuticals</em>, and <em>ACS Chemical Neuroscience</em>. My work spans cancer therapeutics, HDAC inhibitors, RNA biology, and computational drug discovery.
+                    My research has been published in prestigious journals including <em>Angewandte Chemie International Edition</em> (IF: 15.3), <em>Biomedicines</em>, <em>Pharmaceuticals</em>, <em>ACS Chemical Neuroscience</em>, and <em>Anti-Cancer Drugs</em>. My work spans cancer therapeutics, HDAC inhibitors, RNA biology, and computational drug discovery.
                 </p>
                 <p>
-                    <strong>Recent highlights include:</strong> comprehensive ceRNA profiling in glioblastoma, cross-cohort reproducibility frameworks for biomarker discovery, and multi-objective immune gene signatures for cancer therapeutics.
+                    <strong>Recent highlights:</strong> Comprehensive ceRNA profiling in glioblastoma (submitted to <em>Bioinformatics and Biology Insights</em>, August 2025), cross-cohort reproducibility frameworks for survival biomarker discovery (in preparation for <em>BMC Bioinformatics</em>), and multi-objective immune gene signatures for glioblastoma therapeutics (in preparation).
+                </p>
+                <p>
+                    <strong>Key publications:</strong> Novel HDAC inhibitors for metastatic castration-resistant prostate cancer (<em>Pharmaceuticals</em>, 2021), organorhodium anticancer agents (<em>Angew Chem Int Ed</em>, 2020), and comprehensive reviews on HDAC inhibitor treatment strategies (<em>Biomedicines</em>, 2020).
                 </p>
                 <p style="text-align: center; margin-top: 2rem;">
-                    <a href="https://scholar.google.com/citations?user=tHFOZsAAAAAJ&hl=en" class="research-link" target="_blank">View Google Scholar Profile →</a>
+                    <a href="https://scholar.google.com/citations?user=tHFOZsAAAAAJ&hl=en" class="research-link" target="_blank">View Complete Publication List on Google Scholar →</a>
                 </p>
             </div>
         </div>
@@ -587,17 +638,11 @@
                 Beyond the laboratory, I find balance and inspiration through music. Whether composing, performing, or simply exploring different genres, music provides a creative counterpoint to scientific work and offers a unique way to connect with others.
             </p>
             
-            <!-- Spotify Embed -->
+            <!-- Spotify Embed Section -->
             <div style="max-width: 600px; margin: 2rem auto; text-align: center;">
-                <h3 style="color: #2c3e50; margin-bottom: 1rem;">🎧 Listen on Spotify</h3>
-                <p style="color: #666; margin-bottom: 1rem;">Replace the URL below with your Spotify track/album/playlist link</p>
-                <!-- To add your Spotify song:
-                     1. Go to your song on Spotify
-                     2. Click the three dots (...) 
-                     3. Select "Share" → "Embed track"
-                     4. Copy the iframe code and paste it below replacing this comment -->
+                <h3 style="color: #1a202c; margin-bottom: 1rem;">🎧 Listen on Spotify</h3>
                 <iframe style="border-radius:12px; width: 100%; max-width: 500px;" 
-                        src="https://open.spotify.com/embed/track/YOUR_TRACK_ID?utm_source=generator" 
+                        src="https://open.spotify.com/embed/track/6S5txxsisWuILDyNzRt6kA?utm_source=generator" 
                         height="152" 
                         frameBorder="0" 
                         allowfullscreen="" 
@@ -607,51 +652,29 @@
 
             <!-- Performance Videos -->
             <div style="margin-top: 3rem;">
-                <h3 style="color: #2c3e50; text-align: center; margin-bottom: 2rem;">🎸 Live Performances</h3>
+                <h3 style="color: #1a202c; text-align: center; margin-bottom: 1rem;">
+                    🎸 Live Performances <span class="coming-soon">Coming Soon</span>
+                </h3>
+                <p style="text-align: center; color: #4a5568; margin-bottom: 2rem;">
+                    Music covers and performances will be uploaded to YouTube soon. Stay tuned!
+                </p>
+                
+                <!-- Placeholder for future videos - will be added when uploaded -->
+                <!-- 
                 <div class="video-grid">
-                    <!-- Video 1 -->
                     <div class="video-card">
                         <div class="video-container">
-                            <!-- To add YouTube video:
-                                 1. Go to your video on YouTube
-                                 2. Click "Share" → "Embed"
-                                 3. Copy the iframe code and paste below -->
                             <iframe width="100%" height="315" 
-                                    src="https://www.youtube.com/embed/YOUR_VIDEO_ID_1" 
-                                    title="Performance 1" 
+                                    src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE" 
+                                    title="Performance Title" 
                                     frameborder="0" 
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                                     allowfullscreen></iframe>
                         </div>
-                        <p style="text-align: center; margin-top: 0.5rem; color: #666;">Performance Title 1</p>
-                    </div>
-
-                    <!-- Video 2 -->
-                    <div class="video-card">
-                        <div class="video-container">
-                            <iframe width="100%" height="315" 
-                                    src="https://www.youtube.com/embed/YOUR_VIDEO_ID_2" 
-                                    title="Performance 2" 
-                                    frameborder="0" 
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                    allowfullscreen></iframe>
-                        </div>
-                        <p style="text-align: center; margin-top: 0.5rem; color: #666;">Performance Title 2</p>
-                    </div>
-
-                    <!-- Video 3 -->
-                    <div class="video-card">
-                        <div class="video-container">
-                            <iframe width="100%" height="315" 
-                                    src="https://www.youtube.com/embed/YOUR_VIDEO_ID_3" 
-                                    title="Performance 3" 
-                                    frameborder="0" 
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                    allowfullscreen></iframe>
-                        </div>
-                        <p style="text-align: center; margin-top: 0.5rem; color: #666;">Performance Title 3</p>
+                        <p style="text-align: center; padding: 1rem; color: #4a5568; font-weight: 600;">Performance Title</p>
                     </div>
                 </div>
+                -->
             </div>
 
             <div class="about-highlights" style="margin-top: 3rem;">
